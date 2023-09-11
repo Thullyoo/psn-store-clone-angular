@@ -1,1 +1,14 @@
-<p>card works!</p>
+<a [routerLink]="['content', Id]" class="card_container">
+  <img class="card_img"
+  [src]='[gamePhoto]'
+  alt=""
+  srcset="">
+  <app-label
+  gameLabel={{gameLabel}}
+  >
+  </app-label>
+  <app-pricing
+  gameConsole={{gameConsole}}
+  gamePrice={{gamePrice}}
+  ></app-pricing>
+</a>
